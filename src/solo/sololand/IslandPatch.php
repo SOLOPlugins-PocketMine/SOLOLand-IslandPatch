@@ -13,7 +13,7 @@ class IslandPatch extends PluginBase{
 	
 	public function onLoad(){
 		Generator::addGenerator(IslandGenerator::class, "island");
-		World::registerWorld("island", Island::class, null, null, IslandLandManager::class);
+		World::registerWorldClass("island", Island::class, null, null, IslandLandManager::class);
 	}
 	
 	public function onEnable(){
